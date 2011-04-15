@@ -7,8 +7,8 @@ from django.views.generic import TemplateView
 
 admin.autodiscover()
 urlpatterns = patterns('',
-    (r'^admin/', include(admin.site.urls)),
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    (r'^admin/', include(admin.site.urls)),
     # Homepage
     (r'^$', TemplateView.as_view(template_name='homepage.html'))
 )
