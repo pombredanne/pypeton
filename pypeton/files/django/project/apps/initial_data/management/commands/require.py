@@ -16,6 +16,6 @@ class Command(BaseCommand):
         # assume project.settings.ENVIRONMENT else default to 'development'
         env = environ['DJANGO_SETTINGS_MODULE'].split(".")[-1]
         env = 'development' if env == 'settings' else env
-        system('pip install -r ../deploy/requirements.txt')
+        system('pip install -r ../deploy/requirements/base.txt')
         system('pip install -r ../deploy/requirements/%%s.txt' %% env)
         logging.info("Require success")
