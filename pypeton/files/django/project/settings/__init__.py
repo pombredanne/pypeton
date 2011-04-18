@@ -104,7 +104,7 @@ TEMPLATE_LOADERS = (
 # The time zone for this installation
 TIME_ZONE = 'America/Los_Angeles'
 
-# Output the "Etag" header. his saves bandwidth but slows down performance
+# Output the "Etag" header. This saves bandwidth but slows down performance
 USE_ETAGS = False
 
 # Display numbers using a thousand separator
