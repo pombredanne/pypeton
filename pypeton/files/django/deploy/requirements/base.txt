@@ -7,16 +7,9 @@ httplib2            # for django's RequestContext
 simplejson          # for json api's
 django-extensions
 django-debug-toolbar
-# docutils          # for django admindocs
-# pygments          # for syntax color in docutils
+docutils          # for django admindocs
+pygments          # for syntax color in docutils
 # django-adminfiles # for admin files
-# pil               # to use models.ImageField
-# django-imagekit   # to deal with image size, thumbnails
-# -e git+git://github.com/Yipit/django-imagekit.git#egg=imagekit
-# Use our fork of imagekit since it's faster on CDN
-# See https://bitbucket.org/jdriscoll/django-imagekit/issue/28/
-
-# megafeed          # to deliver models through JSON
 
 #--- Deploy with fabric
 -e git+git://github.com/bitprophet/fabric.git#egg=fabric
@@ -37,10 +30,15 @@ django-debug-toolbar
 #--- Other Apps
 # -e git://github.com/ff0000/cereal-box.git#egg=cereal-box
 
-#--- SVN Version Tag
-# -e git://github.com/ff0000/django-svn-revision.git#egg=svnrevision
-
 #--- Admin
 # django-grappelli == 2.3
 # -e hg+http://bitbucket.org/izi/django-admin-tools@v0.4.0#egg=admin-tools
 # feedparser
+
+#--- Imaging
+# DO NOT INSTALL PIL IN THIS FASHION, INSTEAD USE 'apt-get install python-imaging'
+# pil               # to use models.ImageField
+# django-imagekit   # to deal with image size, thumbnails
+# -e git+git://github.com/Yipit/django-imagekit.git#egg=imagekit
+# Use our fork of imagekit since it's faster on CDN
+# See https://bitbucket.org/jdriscoll/django-imagekit/issue/28/
