@@ -7,10 +7,10 @@ from django.views.generic import TemplateView
 
 admin.autodiscover()
 urlpatterns = patterns('',
-    (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-    (r'^admin/', include(admin.site.urls)),
-    # Homepage
-    (r'^$', TemplateView.as_view(template_name='homepage.html')),
+	(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+	(r'^admin/', include(admin.site.urls)),
+	# Homepage
+	(r'^$', TemplateView.as_view(template_name='homepage.html')),
 )
 
 # Static URLs
@@ -18,5 +18,5 @@ urlpatterns += staticfiles_urlpatterns()
 
 # Upload URLS
 if settings.DEBUG:
-    urlpatterns.insert(-2, url(r'^%%s(?P<path>.*)' %% settings.MEDIA_URL[1:],
-        'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
+	urlpatterns.insert(-2, url(r'^%%s(?P<path>.*)' %% settings.MEDIA_URL[1:],
+		'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
