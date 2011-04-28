@@ -28,7 +28,7 @@ pygments          # for syntax color in docutils
 # # and https://github.com/richleland/django-cumulus/pull/11
 
 #--- Other Apps
-# -e git://github.com/ff0000/cereal-box.git#egg=cereal-box
+# cereal-box
 
 #--- Admin
 # django-grappelli == 2.3
