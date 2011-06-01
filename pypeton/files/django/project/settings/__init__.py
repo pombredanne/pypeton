@@ -21,6 +21,9 @@ DEBUG = True
 # Address to use for various automated correspondence from the site manager(s).
 DEFAULT_FROM_EMAIL = 'webmaster@example.com'
 
+# Set the subject prefix for email messages sent to admins and managers
+EMAIL_SUBJECT_PREFIX = '[%(PROJECT_NAME)s] '
+
 # Maximum size (in bytes) before an upload gets streamed to the file system.
 FILE_UPLOAD_MAX_MEMORY_SIZE = 5242880
 
