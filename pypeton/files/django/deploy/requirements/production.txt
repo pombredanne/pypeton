@@ -1,2 +1,2 @@
 #--- Databases
-MySQL-python
+MySQL-python == 1.2.3

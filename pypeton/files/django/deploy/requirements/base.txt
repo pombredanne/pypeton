@@ -1,23 +1,20 @@
+# NOTE: YOU MUST PEG EVERY REQUIREMENT TO A SPECIFIC VERSION
+
 #--- pip
 pip == 0.8.3 # pip >= 0.8.2 is required for git branch to work correctly
 
 #--- Django
 django == 1.3
 httplib2            # for django's RequestContext
-simplejson          # for json api's
+simplejson ==2.1.6  # for json api's
 django-extensions
 django-debug-toolbar
-docutils          # for django admindocs
-pygments          # for syntax color in docutils
+docutils == 0.7     # for django admindocs
+pygments == 1.4     # for syntax color in docutils
 # django-adminfiles # for admin files
 
-#--- Deploy with fabric
--e git+git://github.com/bitprophet/fabric.git#egg=fabric
--e git+git://github.com/ff0000/red-fab-deploy.git#egg=red-fab-deploy
--e git+git://github.com/apache/libcloud.git@trunk#egg=libcloud
-
 #--- Databases
-# MySQL-python
+# MySQL-python == 1.2.3
 # psycopg2
 
 #--- Assets and media throught CDN
