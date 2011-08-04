@@ -21,7 +21,7 @@ Frequently we need to create a Django project from scratch and push it on a prod
       -v, --virtualenv   initialise virtual envirnment
       -s, --subversion   create project in svn style with trunk/tags/branches
       -d DIR, --dir=DIR  base project directory
-      -e ENV, --env=ENV  [bongo] or [django]
+      -e ENV, --env=ENV  [django]
       
 ### Examples
 
@@ -38,10 +38,6 @@ initialize a virtual environment all in one step.
 Specify a directory other than the present working directory
 
     pypeton -d /path/to/folder  my_project
-    
-Create complete chaos ( a bongo project )
-
-    pypeton -e bongo my_project
     
     
 ## TODO: 

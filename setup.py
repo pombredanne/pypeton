@@ -2,15 +2,33 @@ from distutils.core import setup
 
 setup(
     name         = 'pypeton',
-    #packages     = ['pypeton',],
+    packages     = ['pypeton',],
     scripts      = ['pypeton/pypeton',],
-    version      = 'v0.4.0',
+    version      = '0.5.0',
     author       = 'RED Interactive Agency',
     author_email = 'geeks@ff0000.com',
 
     package_data = {
         'pypeton': [
-            'files/*',
+            'files/django/*.*',
+            'files/django/deploy/*.*',
+            'files/django/deploy/cron/*.*',
+            'files/django/deploy/requirements/*.*',
+            'files/django/deploy/scripts/*.*',
+            'files/django/env/*.*',
+            'files/django/logs/*.*',
+            'files/django/migrations/*.*',
+            'files/django/project/*.*',
+            'files/django/project/apps/*.*',
+            'files/django/project/apps/initial_data/*.*',
+            'files/django/project/apps/initial_data/fixtures/*.*',
+            'files/django/project/apps/initial_data/management/*.*',
+            'files/django/project/apps/initial_data/management/commands/*.*',
+            'files/django/project/apps/initial_data/middleware/*.*',
+            'files/django/project/settings/*.*',
+            'files/django/project/static/*.*',
+            'files/django/project/templates/*.*',
+            'files/django/uploads/*.*',
         ]
     },
 
