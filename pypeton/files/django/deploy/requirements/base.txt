@@ -39,3 +39,8 @@ pygments == 1.4     # for syntax color in docutils
 # -e git+git://github.com/Yipit/django-imagekit.git#egg=imagekit
 # Use our fork of imagekit since it's faster on CDN
 # See https://bitbucket.org/jdriscoll/django-imagekit/issue/28/
+
+#--- Redis for Node and Cache
+# IMPORTANT: USE THESE VERSIONS BECAUSE Newer versions give AttributeError: 'Redis' object has no attribute 'connection'
+# redis == 2.2.4        
+# django-redis-cache == 0.5.1
