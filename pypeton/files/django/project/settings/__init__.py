@@ -43,6 +43,9 @@ INSTALLED_APPS = (
     'initial_data', # load django-admin commands, initial fixtures, ..
 )
 
+# A tuple of IP addresses that see debug comments, when DEBUG is True
+INTERNAL_IPS = ('0.0.0.0', '127.0.0.1',)
+
 # The language code for this installation
 LANGUAGE_CODE = 'en-us'
 
