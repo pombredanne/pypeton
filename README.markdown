@@ -1,4 +1,7 @@
 
+Abandoned and replaced with: https://github.com/ff0000/django-start
+
+
 An application to bootstrap 
 
 Frequently we need to create a Django project from scratch and push it on a production machine. 
